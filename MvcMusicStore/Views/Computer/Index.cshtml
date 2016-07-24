@@ -1,0 +1,166 @@
+﻿@model IEnumerable<MvcMusicStore.Models.Products_ComputerServer>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ModelNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Picture)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CompanyName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SecretLevel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Structure)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Size)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CPU)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Frequency)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StandardCPUNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaxCPUNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MemoryType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MemorySize)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaxMemorySize)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HardDriveInterface)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StandardHardDriveSize)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaxHardDriveSize)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Contact)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataEntryPerson)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastUpdateTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Source)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModelNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Picture)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CompanyName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SecretLevel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Structure)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Size)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CPU)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Frequency)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StandardCPUNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaxCPUNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MemoryType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MemorySize)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaxMemorySize)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HardDriveInterface)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StandardHardDriveSize)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaxHardDriveSize)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Contact)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataEntryPerson)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastUpdateTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Source)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ProductId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ProductId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ProductId })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,209 @@
+﻿@model MvcMusicStore.Models.Products_ComputerServer
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Products_ComputerServer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ModelNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModelNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Picture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Picture)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SecretLevel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SecretLevel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Structure)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Structure)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Size)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Size)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CPU)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CPU)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Frequency)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Frequency)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StandardCPUNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StandardCPUNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaxCPUNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaxCPUNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MemoryType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MemoryType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MemorySize)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MemorySize)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaxMemorySize)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaxMemorySize)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HardDriveInterface)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HardDriveInterface)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StandardHardDriveSize)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StandardHardDriveSize)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaxHardDriveSize)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaxHardDriveSize)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contact)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataEntryPerson)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataEntryPerson)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastUpdateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastUpdateTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Source)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Source)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
